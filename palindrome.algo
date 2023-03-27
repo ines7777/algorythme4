@@ -1,0 +1,20 @@
+FUNCTION palindrome(ch STRING, n INTEGER) : BOOLEAN
+VAR
+    ch STRING;
+    n:= length(ch);
+    p BOOLEAN;
+BEGIN
+    IF (ch=="" or length(ch)==1) THEN
+        result:= false;
+    ELSE
+    p:=palindrome(ch,n/2);
+     i:=0;
+     IF (ch[i]==ch[n-1-i]) THEN
+        result:=true;
+     END_IF
+    
+
+        
+    END_IF
+    RETURN result ;
+END
