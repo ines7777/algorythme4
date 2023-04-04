@@ -5,7 +5,7 @@ VAR
     p BOOLEAN;
 BEGIN
     IF (ch=="" or length(ch)==1) THEN
-        result:= false;
+        result:= true;
     ELSE
     p:=palindrome(ch,n/2);
      i:=0;

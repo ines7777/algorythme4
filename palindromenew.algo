@@ -1,0 +1,15 @@
+PROCEDURE Palindrome(left,right:INTEGER,word:STRING[50])
+VAR
+   
+BEGIN
+     IF (word.length=0 OR left=right)  THEN
+        write("palindrome");
+    
+    ELSE
+     IF (word[left]= word[right]) THEN
+        Palindrome(left+1,right-1,word)
+     ELSE
+        write("not palindrome")
+     END_IF
+    END_IF 
+END
